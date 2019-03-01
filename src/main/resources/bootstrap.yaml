@@ -1,0 +1,12 @@
+spring:
+     profiles:
+       active: prod
+     cloud:
+       config:
+         uri: http://localhost:8888
+#for all actuator services
+management:
+    endpoints:
+      web:
+        exposure:
+          include: '*'
